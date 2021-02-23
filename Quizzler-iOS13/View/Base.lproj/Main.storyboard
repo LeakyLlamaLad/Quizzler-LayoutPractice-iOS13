@@ -19,17 +19,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="eGL-jB-Wwb">
                                 <rect key="frame" x="0.0" y="794" width="414" height="102"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-CU-eIW">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-CU-eIW">
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tig-aX-Q6l">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="607"/>
+                                        <rect key="frame" x="0.0" y="31" width="374" height="624"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
-                                        <rect key="frame" x="0.0" y="630" width="374" height="68"/>
+                                        <rect key="frame" x="0.0" y="662" width="374" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="68" id="trN-6M-jKR"/>
                                         </constraints>
@@ -43,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
-                                        <rect key="frame" x="0.0" y="721" width="374" height="68"/>
+                                        <rect key="frame" x="0.0" y="737" width="374" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="68" id="Fmc-v7-lmb"/>
                                         </constraints>
@@ -85,6 +92,7 @@
                         <outlet property="falseButton" destination="tbn-vQ-GyC" id="OXA-Iv-QN2"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="SMU-GW-kto"/>
                         <outlet property="questionLable" destination="rSI-li-mhO" id="CCE-mD-UNL"/>
+                        <outlet property="scoreLable" destination="Tig-aX-Q6l" id="pGe-Y7-6sF"/>
                         <outlet property="trueButton" destination="oVw-Hl-IRe" id="QbZ-Rp-QkY"/>
                     </connections>
                 </viewController>
